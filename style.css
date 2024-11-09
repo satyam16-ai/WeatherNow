@@ -58,7 +58,7 @@ body::after {
 }
 
 #search_area {
-    width: 60%;
+    width: 90%;
     max-width: 500px;
     display: flex;
     gap: 10px;
