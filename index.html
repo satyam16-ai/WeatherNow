@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="search_area">
+            <button id="location">
+                <i class="fas fa-location-crosshairs" id="locDot"></i>
+            </button>
+            <input type="text" id="search" placeholder="Search for a city...">
+            <button id="search_button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="weather_card" style="display: none;">
+            <div id="main_details">
+                <div id="wish_message"></div>
+                <div id="weather_info">
+                    <img src="" alt="Weather Condition" id="weather_icon">
+                    <div id="temperature">
+                        <span id="temp_value"></span>
+                        <span id="condition_text"></span>
+                    </div>
+                </div>
+                <div id="location_info">
+                    <h2 id="location_name"></h2>
+                    <div id="current_time"></div>
+                </div>
+            </div>
+            <div id="additional_info">
+                <div class="detail_card"><i class="fas fa-thermometer-half"></i> Feels Like: <span id="feels_like"></span></div>
+                <div class="detail_card"><i class="fas fa-wind"></i> Wind: <span id="wind_speed"></span> <span id="wind_direction"></span></div>
+                <div class="detail_card"><i class="fas fa-wind"></i> Wind Gust: <span id="wind_gust"></span></div>
+                <div class="detail_card"><i class="fas fa-tint"></i> Humidity: <span id="humidity"></span></div>
+                <div class="detail_card"><i class="fas fa-tachometer-alt"></i> Pressure: <span id="pressure"></span></div>
+                <div class="detail_card"><i class="fas fa-temperature-low"></i> Dew Point: <span id="dew_point"></span></div>
+                <div class="detail_card"><i class="fas fa-cloud"></i> Cloud Cover: <span id="cloud_cover"></span></div>
+                <div class="detail_card"><i class="fas fa-eye"></i> Visibility: <span id="visibility"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
